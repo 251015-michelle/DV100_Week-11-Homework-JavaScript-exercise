@@ -15,9 +15,8 @@ body{
 /* HERO */
 
 .hero{
-    height: 100;
-    background-image:
-    color:white;
+    height: 100vh;
+    background-image: url(../assets/img/MermaidTail_hero.Img.png);
     padding:30px 80px 120px;
     position:relative;
 }
@@ -27,16 +26,26 @@ nav{
     justify-content:space-between;
     align-items:center;
     margin-bottom:70px;
+    
+    padding: 0px 50px;
+    padding-top: 15px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(34, 51, 68, 0.83);
+    border: none;
+    border-radius: 35px;
 }
 
-.logo h1{
-    font-family:'Cormorant Garamond', serif;
-    font-size:3rem;
+.logo img{
+    max-width: 300px;
 }
 
 .logo p{
     letter-spacing:4px;
     font-size:0.9rem;
+    color: #d7d7e7;
+    padding-left: 40px;
 }
 
 nav ul{
