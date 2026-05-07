@@ -1,0 +1,408 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to bottom,#dff7ff,#f4ecff);
+    color:#234;
+}
+
+/* colors,#012f5c,#0679b8 */
+
+/* HERO */
+
+.hero{
+    height: 100;
+    background-image:
+    color:white;
+    padding:30px 80px 120px;
+    position:relative;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:70px;
+}
+
+.logo h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+}
+
+.logo p{
+    letter-spacing:4px;
+    font-size:0.9rem;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:5rem;
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#ffb7f0;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+    line-height:1.8;
+    max-width:500px;
+}
+
+.hero-text button{
+    background:linear-gradient(to right,#ff7fd1,#d56cff);
+    border:none;
+    color:white;
+    padding:18px 40px;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.hero-image img{
+    width:500px;
+    border-radius:30px;
+}
+
+
+/* ABOUT */
+
+.about-section{
+    background:linear-gradient(to bottom,#e9fcff,#dffcff);
+    padding:90px 80px;
+    text-align:center;
+}
+
+.about-section h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.5rem;
+    color:#7c43bd;
+    margin-bottom:30px;
+}
+
+.about-section p{
+    max-width:850px;
+    margin:auto;
+    line-height:2;
+    font-size:1.1rem;
+}
+
+.about-icons{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.icon-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.icon-box h3{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+
+/* PRODUCTS */
+
+.products{
+    padding:90px 80px;
+    background:linear-gradient(to bottom,#efe6ff,#f6f3ff);
+}
+
+.products h2{
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+    font-size:3.5rem;
+    color:#7c43bd;
+    margin-bottom:60px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,0.12);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+    text-align:center;
+}
+
+.card-content h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    color:#6b33a8;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#0e9cb8;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.colours{
+    margin-bottom:12px;
+}
+
+.colour-circles{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.circle{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    display:block;
+}
+
+.blue{background:#2aa7ff;}
+.teal{background:#59d7db;}
+.mint{background:#b5fff3;}
+.lavender{background:#c5b5ff;}
+.pink{background:#ff75b7;}
+.peach{background:#ffb69a;}
+.gold{background:#ffd86e;}
+.aqua{background:#2ed8ff;}
+.green{background:#4cd7a7;}
+.seafoam{background:#9fffd5;}
+.pale{background:#ebebff;}
+.purple{background:#9452ff;}
+.royal{background:#4566ff;}
+
+.card button{
+    background:linear-gradient(to right,#47d6d9,#8f56ff);
+    border:none;
+    color:white;
+    width:100%;
+    padding:15px;
+    border-radius:40px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+/* CONTACT */
+
+.contact-section{
+    background:linear-gradient(to bottom,#dffcff,#f4ecff);
+    padding:90px 80px;
+}
+
+.form-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+.form-box,
+.output-box{
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.12);
+}
+
+.form-box h2,
+.output-box h2{
+    font-family:'Cormorant Garamond', serif;
+    color:#0e8ba8;
+    font-size:2.5rem;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+    color:#355;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #d7d7e7;
+}
+
+.radio-group,
+.checkbox-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.submit-btn{
+    background:linear-gradient(to right,#a95cff,#ff73c4);
+    color:white;
+    border:none;
+    width:100%;
+    padding:18px;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.output-box{
+    min-height:400px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#6d4ca3;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .hero,
+    .about-section,
+    .products,
+    .contact-section {
+        padding: 60px 25px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text p {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-icons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-text h2 {
+        font-size: 2.8rem;
+    }
+
+    .products h2,
+    .about-section h2,
+    .form-box h2,
+    .output-box h2 {
+        font-size: 2.3rem;
+    }
+
+    .about-icons {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 280px;
+    }
+
+    .hero-text button,
+    .submit-btn,
+    .card button {
+        width: 100%;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+}
