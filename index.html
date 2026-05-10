@@ -242,7 +242,7 @@
                     </div>
 
 
-                    <!-- RADIO BUTTONS -->
+                    <!-- RADIO BUTTONS 1 -->
 
                     <div class="input-group">
                         <label>Choose Your Tail Style</label>
@@ -254,23 +254,41 @@
                     </div>
 
 
-                    <!-- CHECKBOXES -->
+                    <!-- RADIO BUTTONS 2 -->
 
                     <div class="input-group">
                         <label>Tail Fin Type</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tail"> Monofin</label>
+                            <label><input type="radio" name="tail"> Split Fin</label>
+                            <label><input type="radio" name="tail"> Open Fin</label>
+                        </div>
+                    </div>
+
+
+                    <!-- CHECKBOXES -->
+
+                    <div class="input-group">
+                        <label>Choose your desired colour combination</label>
                         <div class="checkbox-group">
-                            <label><input type="checkbox"> Monofin</label>
-                            <label><input type="checkbox"> Split Fin</label>
-                            <label><input type="checkbox"> Open Fin</label>
+                            <label><input type="checkbox"> Pink</label>
+                            <label><input type="checkbox"> Blue</label>
+                            <label><input type="checkbox"> Orange</label>
+                            <label><input type="checkbox"> Purple</label>
+                            <label><input type="checkbox"> Green</label>
+                            <label><input type="checkbox"> Red</label>
+                            <label><input type="checkbox"> Yellow</label>
+                            <label><input type="checkbox"> Black</label>
                         </div>
                     </div>
 
 
                     <!-- INPUT COUNTER -->
 
-                    <div class="input-group">
-                        <label>Quantity</label>
-                        <input type="number" value="1" min="1" max="10">
+                    <div class="stepper-container">
+                        <button id="decrement">-</button>
+                        <input type="number" id="stepper-input" value="1" min="0">
+                        <button id="increment">+</button>
                     </div>
 
                     <div class="input-group">
